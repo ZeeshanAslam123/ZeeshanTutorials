@@ -1,0 +1,42 @@
+form{
+	width: 60%;
+	border: 2px solid #e5e5e5;
+	box-shadow: 0 0 1px 3px #e8e8e8;
+	padding: 2%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+form input[type="text"],
+	[type="email"],
+	[type="password"],
+	[type="number"],
+	[type="date"],
+	[type="time"],
+	[type="submit"],
+	select,
+	textarea{
+
+		width: 100%;
+		margin-bottom: 20px;
+		height: 35px;
+
+	}
+form input[type="checkbox"],
+			[type="radio"]{
+
+				display: inline;
+				margin-bottom: 15px;
+
+			}
+@media only screen and (max-width: 550px){
+
+	form input[type="checkbox"],
+			[type="radio"]{
+
+				display: block;
+				margin-bottom: 15px;
+
+			}
+
+}
+
