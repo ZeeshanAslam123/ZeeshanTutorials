@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Robot </title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		.container {
+			position: relative;
+		}
+		.robot_wrapper {
+			margin: 10% auto;
+			/*background: blue;*/
+		}
+		.robot_head {
+			height: 100px;
+			width: 100px;
+			position: relative;
+			left: 505px;
+			top: -18px;
+			margin: 0 auto;
+			/*background: red;*/
+			border-radius: 50%;
+		}
+		.robot_hand_1 {
+			width: 180px;
+			height: 20px;
+			position: absolute;
+			left: 315px;
+			top: 110px;
+			/*background: lightgreen;*/
+		}
+		.robot_body {
+			width: 150px;
+			height: 250px;
+			position: absolute;
+			left: 495px;
+			top: 82px;
+			/*background: lightblue;*/
+		}
+		.robot_hand_2 {
+			width: 180px;
+			height: 20px;
+			position: absolute;
+			right: 315px;
+			top: 110px;
+			/*background: lightgreen;*/
+		}
+		.robot_2_legs {
+			width: 250px;
+			height: 200px;
+			position: relative;
+			/*background: red;*/
+			left: 430px;
+			top: 232px;
+		}
+		.robot_1st_leg {
+			/*background: red;*/
+			height: 180px;
+			width: 20px;
+			position: absolute;
+			left: 80px;
+		}
+		.robot_2nd_leg {
+			/*background: red;*/
+			height: 180px;
+			width: 20px;
+			position: absolute;
+			right: 80px;
+		}
+		.eye_1 {
+			position: absolute;
+			top: 25%;
+			left: 25%;
+			border-radius: 50%;
+			height: 10px;
+			width: 10px;
+			background: white;
+		}
+		.eye_2 {
+			position: absolute;
+			top: 25%;
+			right: 30%;
+			border-radius: 50%;
+			height: 10px;
+			width: 10px;
+			background: white;
+		}
+		.mouth {
+			height: 8px;
+			width: 25px;
+			background: white;
+			position: absolute;
+			top: 65%;
+			left: 49%;
+			transform: translate(-50% , -50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="robot_wrapper">
+			<div class="robot_head btn btn-dark">
+				<div class="eye_1">
+					
+				</div>
+				<div class="eye_2">
+					
+				</div>
+				<div class="mouth">
+					
+				</div>
+			</div>
+			<div class="robot_hand_1 btn btn-warning">
+					
+			</div>
+			<div class="robot_body btn btn-primary">
+					
+			</div>
+			<div class="robot_hand_2 btn btn-warning">
+					
+			</div>
+			<div class="robot_2_legs">
+				<div class="robot_1st_leg btn btn-success">
+					
+				</div>
+				<div class="robot_2nd_leg btn btn-success">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
