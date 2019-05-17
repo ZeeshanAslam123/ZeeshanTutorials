@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+body {
+	background-image: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url('images/bg.jpg');
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	position: relative;
+	top: 5%;
+}
+.main_photo_gallery {
+	height: 600px;
+	width: 100%;
+	/*background-color: red;*/
+	margin-top: 5%;
+}
+.gallery_wrapper1 {
+	height: 48%;
+	width: 100%;
+	/*background: orange;*/
+}
+
+.gallery_wrapper1 .image1 {
+	height: 100%;
+	width: 24%;
+	margin-left: 10px;
+
+	/*background: lightyellow;*/
+	float: left;
+}
+.gallery_wrapper1 .image1 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper1 .image1 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+.gallery_wrapper1 .image2 {
+	height: 100%;
+	width: 24%;
+	margin-left: 10px;
+	float: left;
+	overflow: hidden;
+	/*background: blue;*/
+}
+.gallery_wrapper1 .image2 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper1 .image2 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+.gallery_wrapper1 .image3 {
+	height: 100%;
+	width: 24%;
+	float: left;
+	margin-left: 10px;
+	/*background: lightgreen;*/
+}
+.gallery_wrapper1 .image3 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper1 .image3 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+.gallery_wrapper1 .image4 {
+	height: 100%;
+	width: 24%;
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+	/*background: lightblue;*/
+}
+.gallery_wrapper1 .image4 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper1 .image4 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+
+
+
+
+
+
+/* This section gallery2 div*/
+
+.gallery_wrapper2 {
+	height: 48%;
+	width: 100%;
+	/*background: yellow;*/
+	margin-top: 25px;
+}
+.gallery_wrapper2 .image1 {
+	height: 100%;
+	width: 24%;
+	margin-left: 10px;
+	/*background: lightyellow;*/
+	float: left;
+}
+.gallery_wrapper2 .image1 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper2 .image1 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+.gallery_wrapper2 .image2 {
+	height: 100%;
+	width: 24%;
+	margin-left: 10px;
+	float: left;
+	overflow: hidden;
+	/*background: blue;*/
+}
+.gallery_wrapper2 .image2 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper2 .image2 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+.gallery_wrapper2 .image3 {
+	height: 100%;
+	width: 24%;
+	float: left;
+	margin-left: 10px;
+	/*background: lightgreen;*/
+}
+.gallery_wrapper2 .image3 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper2 .image3 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
+.gallery_wrapper2 .image4 {
+	height: 100%;
+	width: 24%;
+	overflow: hidden;
+	float: left;
+	margin-left: 10px;
+	/*background: lightblue;*/
+}
+.gallery_wrapper2 .image4 img {
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper2 .image4 img:hover {
+	transform: scale(1.5 , 1.5);
+	transition: all 1.5s ease;
+}
