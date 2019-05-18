@@ -1,172 +1,2499 @@
-* {
-	padding: 0;
-	margin: 0;
-
-}
-
 body {
-	background-image: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5) ) ,url('images/bg.jpg');
-	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*overflow: hidden;*/
+	font-size: 20px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Bitter', serif;
+	font-family: 'Oxygen', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+/* ...........Start header css.......... */
+header {
+	background: #fff;
 	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: auto;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	box-sizing: border-box;
+	z-index: 999;
 }
 
-h1 {
-	text-align: center;
-	font-size: 50px;
-	color: white;
-	position: relative;
-	top: 5%;
+
+.header-wrapper {
+	/*background: yellow;*/
+	max-width: 100%;
+	margin: 0px auto;
+	height: 100%;
+
 }
-.main_photo_gallery {
-	height: 600px;
+.logo-navigation-wrapper {
+	/*background: blue;*/
+
 	width: 100%;
-	/*background-color: red;*/
-	margin-top: 5%;
+	height: 100%;
 }
-.gallery_wrapper1 {
-	height: 48%;
+.logo {
 	width: 100%;
 	/*background: orange;*/
+	text-align: center;
 }
+.logo img {
 
-.gallery_wrapper1 .image1 {
-	height: 100%;
-	width: 24%;
-	margin-left: 10px;
+	height: 100px;
+	width: 200px;
 
-	/*background: lightyellow;*/
-	float: left;
 }
-.gallery_wrapper1 .image1 img {
-	height: 100%;
+.navigation {
 	width: 100%;
+	background: black;
+	padding: 0.1px 0;
+	height: 70px;
 }
-.gallery_wrapper1 .image1 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
+.navigation ul {
+	padding: 0;
+	/*background: red;*/
+	display: block;
 }
-.gallery_wrapper1 .image2 {
-	height: 100%;
-	width: 24%;
-	margin-left: 10px;
-	float: left;
-	overflow: hidden;
-	/*background: blue;*/
-}
-.gallery_wrapper1 .image2 img {
-	height: 100%;
-	width: 100%;
-}
-.gallery_wrapper1 .image2 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
-}
-.gallery_wrapper1 .image3 {
-	height: 100%;
-	width: 24%;
-	float: left;
-	margin-left: 10px;
-	/*background: lightgreen;*/
-}
-.gallery_wrapper1 .image3 img {
-	height: 100%;
-	width: 100%;
-}
-.gallery_wrapper1 .image3 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
-}
-.gallery_wrapper1 .image4 {
-	height: 100%;
-	width: 24%;
-	float: left;
-	overflow: hidden;
-	margin-left: 10px;
-	/*background: lightblue;*/
-}
-.gallery_wrapper1 .image4 img {
-	height: 100%;
-	width: 100%;
-}
-.gallery_wrapper1 .image4 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
-}
-
-
-
-
-
-
-/* This section gallery2 div*/
-
-.gallery_wrapper2 {
-	height: 48%;
-	width: 100%;
+.navigation ul li {
+	list-style: none;
 	/*background: yellow;*/
-	margin-top: 25px;
+	display: inline-block;
+	width: 150px;
+	text-align: center;
 }
-.gallery_wrapper2 .image1 {
+.navigation ul li a {
+	font-size: 110%;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-bottom: 2px;
+	color: white;
+	letter-spacing: 2px;
+}
+.navigation ul li a:hover {
+	border-bottom: 1.5px solid #fff;
+}
+.header-wrapper #icon-bar {
+	font-size: 30px;
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	color: white;
+	font-size: 32px;
+	display: none;
+
+}
+.header-wrapper #icon-bar:hover {
+	color: orange;
+}
+
+.picture {
+	height: 275px;
+	/*background: red;*/
+	width: 100%;
+	background-image: linear-gradient( rgba(0,0,0,0.5) , rgba(0,0,0,0.5) ), url('images/home-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.heading {
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.heading h1 {
+	margin-top: 25px;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	margin-bottom: 15px;
+	text-shadow: 3px 3px 20px white;
+}
+.heading h3 {
+	/*margin-top: 20px;*/
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 50px;
+	text-shadow: 3px 3px 10px white;
+}
+.heading a {
+	border: 2px solid white;
+	padding: 10px 30px;
+	border-radius: 200px;
+	color: #961a6f;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #fff;
+	box-shadow: 18px 10px 25px transparent;
+}
+.heading a:hover {
+	background: transparent;
+	color: white;
+	box-shadow: 120px;
+	text-shadow: 2px 1px 1px white;
+
+}
+/*..................Close header css.................*/
+
+/* ..............Start content area css............. */
+content {
+
+	width: 100%;
+
+}
+.main-content-wrapper {
+
+	width: 100%;
+	height: 450px;
+}
+.slider {
+	width: 60%;
 	height: 100%;
-	width: 24%;
-	margin-left: 10px;
-	/*background: lightyellow;*/
+	/*background: red;*/
+	float: left;
+
+}
+
+#wowslider-container1 {
+	height: 100%;
+
+}
+.ws_images .wows1_0{
+	height: 100%;
+
+}
+.news {
+	width: 40%;
+	height: 100%;
+	/*background: green;*/
+	float: right;
+
+}
+.news img {
+	width: 100%;
+	height: 70%;
+}
+.news p {
+	text-align: justify;
+	text-align: center;
+}
+.news p #textHidden {
+	position: fixed;
+	top: 63.5%;
+	right: 1%;
+}
+.news p #textHidden {
+	height: 260px;
+	width: 500px;
+	background: white;
+	display: none;
+}
+/*...........Close Content area css.........*/
+
+/*...........start Article area css.........*/
+.main-articles {
+	width: 100%;
+	max-width: 100%;
+	height: 800px;
+
+}
+
+.article1 {
+	width: 50%;
+	height: 50%;
+	float: left;
+
+}
+
+.article1 img {
+	width: 100%;
+	height: 100%;
+}
+.article2 {
+	width: 50%;
+	height: 50%;
+	float: right;
+	/*background: green;*/
+}
+.article2 img {
+	width: 100%;
+	height: 100%;
+}
+.article3 {
+	overflow: hidden;
+	height: 50%;
+	width: 50%;
+	/*background: orange;*/
 	float: left;
 }
-.gallery_wrapper2 .image1 img {
+.article2 img {
+	width: 100%;
+	height: 100%;
+}
+.article4 {
+	width: 50%;
+	height: 50%;
+	/*background: blue;*/
+	float: right;
+}
+.article4 img {
+	width: 100%;
+	height: 100%;
+}
+.article1-text {
+	height: 200px;
+	/*overflow: hidden;*/
+	/*background: green;*/
+}
+.article1-text .text1 {
+	width: 50%;
+	height: 100%;
+	/*background: orange;*/
+	float: left;
+}
+.article1-text .text2 {
+	width: 50%;
+	height: 100%;
+	/*background: yellow;*/
+	float: right;
+}
+.text1 p {
+	text-align: center;
+	text-align: justify;
+	width: 90%;
+	margin: 0px auto;
+}
+.text2 p {
+	text-align: center;
+	text-align: justify;
+	width: 90%;
+	margin: 0px auto;
+}
+/* .........Close Article area......... */
+
+/*.......... Start section area css..........*/
+
+.travels {
+	width: 100%;
+	overflow: hidden;
+	/*background-color: red;*/
+	height: 800px;
+	position: relative;
+	top: 20px;
+
+}
+.section-wrapper {
+	width: 100%;
+	height: 100%;
+}
+.glacier {
+	width: 100%;
+	height: 33.33%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.image-transition {
+	position: absolute;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 35%;
+	padding-top: 170px;
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+}
+.glacier #img {
+	height: 100%;
+	float: left;
+	width: 35%;
+	border-radius: 2px;
+}
+.glacier:hover .image-transition {
+	opacity: 1;
+	visibility: visible;
+	transition: all 1s ease;
+}
+.butons a input{
+	border: 1.5px solid white;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 5px 10px 50px transparent;
+	background: transparent;
+	font-weight: bold;
+	font-size: 80%;
+	color: #fff;
+	cursor: pointer;
+
+}
+.butons a input:hover {
+	background: lightblue;
+	border: 1.5px solid transparent;
+}
+
+.glacier #img2 {
+	height: 100%;
+	float: right;
+	width: 65%;
+	background-image: linear-gradient( rgba(0,0,0,0.6) , rgba(0,0,0,0.6) ), url('images/glacier-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 2px;
+}
+.glacier #img2 h1 {
+	text-align: center;
+	font-size: 55px;
+	color: white;
+	text-shadow: 2px 2px 8px white;
+}
+.holiday {
+	width: 100%;
+	height: 33.33%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	/*background: green;*/
+}
+.holiday #img {
+	height: 100%;
+	width: 35%;
+	border-radius: 2px;
+}
+.holiday:hover .image-transition {
+	opacity: 1;
+	visibility: visible;
+	transition: all 1s ease;
+}
+
+
+.holiday #img2 {
+	height: 100%;
+	float: right;
+	width: 65%;
+	background-image: linear-gradient( rgba(0,0,0,0.6) , rgba(0,0,0,0.6) ), url('images/holiday-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 2px;
+}
+.holiday #img2 h1 {
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	text-shadow: 2px 2px 8px white;
+}
+
+
+.farm-house {
+	width: 100%;
+	height: 33.33%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	/*background: orange;*/
+}
+.farm-house #img {
+	height: 100%;
+	width: 35%;
+	border-radius: 2px;
+}
+.farm-house:hover .image-transition {
+	opacity: 1;
+	visibility: visible;
+	transition: all 1s ease;
+}
+
+
+.farm-house #img2 {
+	height: 100%;
+	float: right;
+	width: 65%;
+	background-image: linear-gradient( rgba(0,0,0,0.6) , rgba(0,0,0,0.6) ), url('images/farm-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 2px;
+}
+.farm-house #img2 h1 {
+	text-align: center;
+	font-size: 55px;
+	color: white;
+	text-shadow: 2px 2px 8px white;
+}
+
+
+/* .............Close Section area css........ */
+
+
+/* .........Start Celebrity area css............... */
+
+.celebrity {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	top: 20px;
+	background-image: url('images/celebrity-background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+.celebrity img{
+	filter: grayscale(70%);
+
+}
+
+.celebrity img:hover{
+	filter: grayscale(0);
+}
+.gallery-heading {
+	height: 200px;
+	background-image: url('images/gallery-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.gallery-heading h1{
+	text-align: center;
+	position: relative;
+	top: 25px;
+	font-size: 55px;
+	text-shadow: 2px 2px 10px black;
+}
+
+
+.celebrity1-wrapper {
+	width: 100%;
+	height: 50%;
+	/*background: yellow;*/
+}
+
+.gallery-pic1 {
+	/*background: pink;*/
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.gallery-pic1 img {
 	height: 100%;
 	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+
 }
-.gallery_wrapper2 .image1 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
+.gallery-pic1:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
 }
-.gallery_wrapper2 .image2 {
+
+
+
+.gallery-pic2 {
+	background: black;
+	width: 20%;
 	height: 100%;
-	width: 24%;
-	margin-left: 10px;
 	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.gallery-pic2 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic2:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+.gallery-pic3 {
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+
+}
+.gallery-pic3 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+}
+.gallery-pic3:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+.gallery-pic4 {
+	background: orange;
+	width: 20%;
+	height: 100%;
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.gallery-pic4 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic4:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+.gallery-pic5 {
+	background: red;
+	width: 20%;
+	height: 100%;
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+
+}
+.gallery-pic5 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic5:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+
+.celebrity2-wrapper {
+	width: 100%;
+	height: 50%;
+	/*background: blue;*/
+}
+
+.gallery-pic6 {
+	/*background: white;*/
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;	
+}
+.gallery-pic6 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic6:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+.gallery-pic7 {
+	background: pink;
+	width: 20%;
+	height: 100%;
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.gallery-pic7 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic7:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+
+.gallery-pic8 {
+	/*background: black;*/
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.gallery-pic8 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+}
+.gallery-pic8:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+.gallery-pic9 {
+	background: black;
+	width: 20%;
+	height: 100%;
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+
+}
+.gallery-pic9 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic9:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+
+
+.gallery-pic10{
+	background: orange;
+	width: 20%;
+	height: 100%;
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.gallery-pic10 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+
+}
+.gallery-pic10:hover img {
+	transform: scale(1.5, 1.5);
+	transition: all 1s ease;
+}
+/* ...........close celebrity area css........ */
+
+
+/*.............. start form section..............*/
+
+.form-wrapper form {
+	width: 100%;
+	background-color: #a1a1a1;
+	
+}
+.form-wrapper table td{
+	font-size: 25px;
+}
+.form-wrapper table{
+	font-size: 25px;
+	/*background-color: yellow;*/
+	width: 90%;
+	color: white;
+	margin: 0 auto;
+}
+.form-wrapper table input {
+	padding: 15px 30px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	font-size: 20px;
+	padding-left: 0px;
+
+}
+.form-wrapper table input:focus {
+	outline: none;
+}
+.form-wrapper input[type="submit"] {
+	padding-left: 30px;
+	box-shadow: 2px 5px 8px transparent;
+	color: black;
+}
+
+.clearfix {
+	height: 0;
+	visibility: hidden;
+	display: block;
+	content: ".";
+	clear: both;
+}
+/*..............Close form css..................*/
+
+
+/*.............Start Footer section css.............*/
+footer {
+	background: black;
+	width: 100%;
+	height: 250px;
+}
+
+.footer-wrapper {
+	height: 100%;
+	max-width: 96%;
+	/*background: yellow;*/
+	margin: 0 auto;
+}
+.first-section {
+	width: 100%;
+	height: 33.33%;
 	overflow: hidden;
 	/*background: blue;*/
 }
-.gallery_wrapper2 .image2 img {
+.social-icon {
+	width: 50%;
 	height: 100%;
+	margin: 0 auto;
+	/*background: green;*/
+	line-height: 70px;
+}
+.social-icon ul li {
+	display: inline-block;
+	margin-left: 20px;
+	text-align: center;
+	padding: 4.5px 30px;
+	cursor: pointer;
+
+}
+.social-icon ul li a {
+	font-size: 35px;
+	color: #fff;
+}
+.social-icon ul li:hover #first {
+	color: #4267b2;
+}
+.social-icon ul li:hover #second {
+	color: red;
+}
+.social-icon ul li:hover #third {
+	color: #38A1F3;
+}
+.social-icon ul li:hover #forth {
+	color: red;
+}
+
+
+
+.second-section {
 	width: 100%;
-}
-.gallery_wrapper2 .image2 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
-}
-.gallery_wrapper2 .image3 {
-	height: 100%;
-	width: 24%;
-	float: left;
-	margin-left: 10px;
-	/*background: lightgreen;*/
-}
-.gallery_wrapper2 .image3 img {
-	height: 100%;
-	width: 100%;
-}
-.gallery_wrapper2 .image3 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
-}
-.gallery_wrapper2 .image4 {
-	height: 100%;
-	width: 24%;
+	height: 33.33%;
 	overflow: hidden;
-	float: left;
-	margin-left: 10px;
-	/*background: lightblue;*/
+	/*background: pink;*/
 }
-.gallery_wrapper2 .image4 img {
+.list-names {
+	width: 50%;
 	height: 100%;
+	margin: 0 auto;
+	/*background: green;*/
+
+}
+.list-names ul li {
+	display: inline-block;
+	margin-left: 2px;
+	text-align: center;
+	padding: 4.5px 30px;
+	cursor: pointer;
+
+}
+.list-names ul li a {
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+.list-names ul li:hover #first {
+	border-bottom: 2px solid white;
+}
+.list-names ul li:hover #second {
+	border-bottom: 2px solid white;
+}
+.list-names ul li:hover #third {
+	border-bottom: 2px solid white;
+}
+.list-names ul li:hover #forth {
+	border-bottom: 2px solid white;
+}
+
+
+
+
+
+.third-section {
 	width: 100%;
+	height: 33.33%;
+	/*background: orange;*/
+	overflow: hidden;
 }
-.gallery_wrapper2 .image4 img:hover {
-	transform: scale(1.5 , 1.5);
-	transition: all 1.5s ease;
+.para p {
+  text-align: center;
+  color: #fff;
 }
+/*.............Close Footer section css...........*/
+
+
+
+
+
+
+
+
+
+
+/*................ start media query area........................*/
+
+@media only screen and (max-width: 1200px) {
+	.logo img {
+
+	height: 90px;
+	width: 190px;
+
+	}
+	.navigation {
+		max-width: 100%;
+		background: #222222;
+		position: relative;
+		top: 0;
+		padding: 0.1px 0;
+		opacity: 0.9;
+	}
+	.navigation ul {
+
+	}
+	.navigation ul li {
+		list-style: none;
+		display: inline-block;
+		width: 130px;
+		text-align: center;
+	}
+	.navigation ul li a {
+		font-size: 100%;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding-bottom: 2px;
+		color: white;
+		letter-spacing: 1.5px;
+	}
+	.navigation ul li a:hover {
+		border-bottom: 1.5px solid #fff;
+	}
+
+
+	.main-content-wrapper {
+
+		width: 100%;
+		height: 435px;
+	}
+
+	.news img {
+		width: 100%;
+		height: 60%;
+	}
+	.news p {
+		text-align: justify;
+		text-align: center;
+		font-size: 18px;
+	}
+
+
+	.picture {
+		height: 265px;
+		width: 100%;
+	}
+	.heading {
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	.heading h1 {
+		margin-top: 25px;
+		text-align: center;
+		color: #fff;
+		font-size: 55px;
+		margin-bottom: 15px;
+		text-shadow: 3px 3px 20px white;
+	}
+	.heading h3 {
+		font-size: 28px;
+	}
+	.heading a {
+		padding: 9px 28px;
+		border-radius: 195px;
+	}
+
+
+	.main-articles {
+		width: 100%;
+		max-width: 100%;
+		height: 700px;
+
+	}
+
+
+	.text1 p {
+		text-align: center;
+		text-align: justify;
+		font-size: 90%;
+		width: 90%;
+		margin: 0px auto;
+	}
+	.text2 p {
+		text-align: center;
+		text-align: justify;
+		font-size: 90%;
+		width: 90%;
+		margin: 0px auto;
+	}
+
+
+
+	.travels {
+		width: 100%;
+		overflow: hidden;
+		height: 690px;
+		position: relative;
+		top: 10px;
+	}
+
+	.glacier #img2 h1 {
+		text-align: center;
+		font-size: 45px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+	.holiday #img2 h1 {
+		text-align: center;
+		font-size: 40px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+	.farm-house #img2 h1 {
+		text-align: center;
+		font-size: 45px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+
+
+	.celebrity {
+		width: 100%;
+		height: 420px;
+		position: relative;
+
+	}
+	.gallery-heading h1{
+		text-align: center;
+		position: relative;
+		top: 25px;
+		font-size: 45px;
+		text-shadow: 2px 2px 10px black;
+	}
+
+	.form-wrapper table td{
+		font-size: 22px;
+	}
+	.form-wrapper table{
+		font-size: 22px;
+		/*background-color: yellow;*/
+		width: 90%;
+		color: white;
+		margin: 0 auto;
+	}
+	.form-wrapper table input {
+		padding: 15px 30px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 18px;
+		padding-left: 0px;
+
+	}
+	.form-wrapper input[type="submit"] {
+		padding-left: 20px;
+		box-shadow: 2px 5px 8px transparent;
+		color: black;
+		margin-top: 0;
+	}
+	footer {
+		background: black;
+		width: 100%;
+		height: 200px;
+	}
+
+	.footer-wrapper {
+		height: 100%;
+		max-width: 100%;
+	}
+
+	.social-icon {
+		line-height: 50px;
+	}
+	.social-icon ul li {
+		display: inline-block;
+		margin-left: 15px;
+		text-align: center;
+		padding: 4.5px 30px;
+		cursor: pointer;
+
+	}
+	.social-icon ul li a {
+		font-size: 30px;
+		color: #fff;
+	}
+
+	.list-names ul li {
+		display: inline-block;
+		margin-left: 0;
+		text-align: center;
+		padding: 4px 28px;
+		cursor: pointer;
+
+	}
+	.list-names ul li a {
+		font-size: 20px;
+		color: #fff;
+		text-decoration: none;
+		padding-bottom: 5px;
+	}
+
+} 
+
+@media only screen and (max-width: 990px) {
+
+	.logo img {
+
+		height: 85px;
+		width: 180px;
+
+	}
+	.navigation ul li {
+		list-style: none;
+		display: inline-block;
+		width: 115px;
+		text-align: center;
+	}
+	.navigation ul li a {
+		font-size: 95%;
+	}
+	.navigation ul li a:hover {
+		border-bottom: 1.4px solid #fff;
+	}
+
+
+	.main-content-wrapper {
+
+		width: 100%;
+		height: 400px;
+	}
+
+	.news img {
+		width: 100%;
+		height: 55%;
+	}
+	.news p {
+		text-align: justify;
+		text-align: center;
+		font-size: 18px;
+	}
+
+
+	.picture {
+		height: 250px;
+		width: 100%;
+	}
+	.heading h1 {
+		margin-top: 20px;
+		text-align: center;
+		color: #fff;
+		font-size: 45px;
+		margin-bottom: 10px;
+	}
+	.heading h3 {
+		font-size: 25px;
+	}
+	.heading a {
+		padding: 8px 15px;
+		border-radius: 180px;
+	}
+
+
+	.main-articles {
+		width: 100%;
+		max-width: 100%;
+		height: 600px;
+
+	}
+
+	.text1 p {
+		font-size: 80%;
+	}
+	.text2 p {
+		font-size: 80%;
+	}
+
+
+	.travels {
+		width: 100%;
+		overflow: hidden;
+		height: 670px;
+		position: relative;
+		top: 0px;
+	}
+
+	.glacier #img2 h1 {
+		font-size: 40px;
+	}
+	.holiday #img2 h1 {
+		text-align: center;
+		font-size: 37px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+	.farm-house #img2 h1 {
+		text-align: center;
+		font-size: 40px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+
+	.glacier #img {
+		height: 100%;
+		float: left;
+		width: 35%;
+		border-radius: 2px;
+	}
+	.glacier:hover .image-transition {
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease;
+	}
+	.butons a input{
+		border: 1.5px solid white;
+		padding: 8px 18px;
+		border-radius: 2019px;
+		box-shadow: 5px 10px 50px transparent;
+		background: transparent;
+		font-weight: bold;
+		font-size: 75%;
+		color: #fff;
+		cursor: pointer;
+
+	}
+	.butons a input:hover {
+		background: lightblue;
+		border: 1.5px solid transparent;
+	}
+
+
+
+	.celebrity {
+		width: 100%;
+		height: 380px;
+		position: relative;
+
+	}
+	.gallery-heading h1{
+		text-align: center;
+		position: relative;
+		top: 30px;
+		font-size: 40px;
+		text-shadow: 2px 2px 10px black;
+	}
+
+
+	.form-wrapper table td{
+		font-size: 19px;
+	}
+	.form-wrapper table{
+		font-size: 19px;
+		/*background-color: yellow;*/
+		width: 90%;
+		color: white;
+		margin: 0 auto;
+	}
+	.form-wrapper table input {
+		padding: 13px 27px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 18px;
+		padding-left: 0px;
+
+	}
+	.form-wrapper input[type="submit"] {
+		padding-left: 20px;
+		box-shadow: 2px 5px 8px transparent;
+		color: black;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 0;
+	}
+	footer {
+		background: black;
+		width: 100%;
+		height: 180px;
+	}
+	.social-icon ul li {
+		display: inline-block;
+		margin-left: 0px;
+		text-align: center;
+		padding: 4.5px 25px;
+		cursor: pointer;
+
+	}
+	.social-icon ul li a {
+		font-size: 28px;
+		color: #fff;
+	}
+
+	.list-names ul li {
+		display: inline-block;
+		margin-left: 0px;
+		text-align: center;
+		padding: 3px 14px;
+		cursor: pointer;
+
+	}
+	.list-names ul li a {
+		font-size: 20px;
+		color: #fff;
+		text-decoration: none;
+		padding-bottom: 5px;
+	}
+
+	.para {
+		font-size: 16px;
+	}
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+	.navigation ul {
+		display: none;
+		background: black;
+		position: fixed;
+		width: 100%;
+		top: 10%;
+	}
+	.navigation ul li {
+		float: none;
+		list-style-type: none;
+		background: black;
+		margin-top: 10px;
+		text-align: center;
+		display: block;
+		z-index: -999;
+		padding: 20px 45%;
+
+	}
+	.navigation ul li:hover {
+		background: black;
+		opacity: 0.9;
+		transition: all 2s ease;
+	}
+	.navigation ul li a:hover {
+		color: orange;
+		transition: all 2s ease;
+	}
+
+	.header-wrapper #icon-bar {
+		display: block;
+	}
+
+
+	.main-content-wrapper {
+
+		width: 100%;
+		height: 320px;
+	}
+
+	.news img {
+		width: 100%;
+		height: 60%;
+	}
+	.news p {
+		text-align: justify;
+		text-align: center;
+		font-size: 16px;
+	}
+
+
+	.picture {
+		height: 225px;
+		width: 100%;
+	}
+	.heading {
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	.heading h1 {
+		margin-top: 25px;
+		text-align: center;
+		color: #fff;
+		font-size: 40px;
+		margin-bottom: 10px;
+		text-shadow: 3px 3px 20px white;
+	}
+	.heading h3 {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+	.heading a {
+		padding: 7px 20px;
+		border-radius: 180px;
+		font-size: 16px;
+	}
+	.heading a:hover {
+		text-shadow: none;
+	}
+
+	.main-articles {
+		width: 100%;
+		max-width: 100%;
+		height: 600px;
+
+	}
+
+
+	.text1 p {
+		text-align: center;
+		text-align: justify;
+		font-size: 75%;
+		width: 90%;
+		margin: 0px auto;
+	}
+	.text2 p {
+		text-align: center;
+		text-align: justify;
+		font-size: 75%;
+		width: 90%;
+		margin: 0px auto;
+	}
+
+
+
+	.travels {
+		width: 100%;
+		overflow: hidden;
+		height: 600px;
+		position: relative;
+		top: 10px;
+	}
+
+	.glacier #img2 h1 {
+		text-align: center;
+		font-size: 32px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+	.holiday #img2 h1 {
+		text-align: center;
+		font-size: 28px;
+		color: white;
+		margin-top: 50px;
+		text-shadow: 2px 2px 8px white;
+	}
+	.farm-house #img2 h1 {
+		text-align: center;
+		font-size: 32px;
+		color: white;
+		text-shadow: 2px 2px 8px white;
+	}
+
+	.butons a input{
+		border: 1.5px solid white;
+		padding: 8px 15px;
+		position: relative;
+		bottom: 50px;
+		border-radius: 20px;
+		box-shadow: 3px 7px 45px transparent;
+		background: transparent;
+		font-weight: bold;
+		font-size: 70%;
+		color: #fff;
+		cursor: pointer;
+
+	}
+
+
+	.celebrity {
+		width: 100%;
+		height: 390px;
+		position: relative;
+
+	}
+	.gallery-heading h1{
+		text-align: center;
+		position: relative;
+		top: 40px;
+		font-size: 40px;
+		text-shadow: 2px 2px 10px black;
+	}
+
+	.form-wrapper table td{
+		font-size: 20px;
+		width: 80%;
+		display: block;
+	}
+	.form-wrapper table{
+		font-size: 20px;
+		/*background-color: yellow;*/
+		width: 90%;
+		color: white;
+		padding-top: 50px;
+		margin: 0 auto;
+		margin-top: 20px;
+
+	}
+	.form-wrapper table input {
+		padding: 8px 22px;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		font-size: 16px;
+		padding-left: 0px;
+		width: 80%;
+
+	}
+	.form-wrapper input[type="submit"] {
+		padding-left: 20px;
+		box-shadow: 2px 5px 8px transparent;
+		color: black;
+		margin-top: 0;
+		width: 30%;
+	}
+	footer {
+		background: black;
+		width: 100%;
+		height: 180px;
+	}
+	.social-icon ul {
+		width: 100%;
+	}
+	.social-icon ul li {
+		display: inline-block;
+		margin-left: 5px;
+		text-align: center;
+		padding: 3px 15px;
+		cursor: pointer;
+
+
+	}
+	.social-icon ul li a {
+		font-size: 30px;
+		color: #fff;
+	}
+
+	.list-names ul {
+		width: 100%;
+	}
+	.list-names ul li {
+		display: inline-block;
+		margin-left: 0;
+		text-align: center;
+		padding: 2px 15px;
+		cursor: pointer;
+
+	}
+	.list-names ul li a {
+		font-size: 14px;
+		color: #fff;
+		text-decoration: none;
+		padding-bottom: 5px;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.logo img {
+
+		height: 80px;
+		width: 170px;
+	}
+
+	.slider {
+		width: 100%;
+		height: 100%;
+		float: none;
+		display: block;
+	}
+
+	.news {
+		display: block;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.news img {
+		width: 100%;
+		height: 72%;
+	}
+	.news p {
+		text-align: justify;
+		text-align: center;
+		font-size: 95%;
+		margin-top: 0;
+	}
+
+	.picture {
+		height: 210px;
+		/*background: red;*/
+		width: 100%;
+		margin-top: 0;
+		display: block;
+		overflow: hidden;
+	}
+
+	.heading {
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	.heading h1 {
+		margin-top: 25px;
+		font-size: 35px;
+		text-shadow: 3px 3px 20px white;
+	}
+	.heading h3 {
+		/*margin-top: 20px;*/
+		text-align: center;
+		color: #fff;
+		font-size: 25px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-shadow: 3px 3px 10px white;
+	}
+	.heading a {
+		border: 2px solid white;
+		padding: 5px 15px;
+		border-radius: 50px;
+	}
+
+	.clearfix1:after {
+		height: 0;
+		visibility: hidden;
+		display: block;
+		content: ".";
+		clear: both;
+	}
+
+	.main-articles {
+		width: 100%;
+		max-width: 100%;
+		height: 400px;
+
+	}
+	.text1 p {
+		text-align: center;
+		text-align: justify;
+		font-size: 65%;
+		width: 90%;
+		margin: 0px auto;
+	}
+	.text2 p {
+		text-align: center;
+		text-align: justify;
+		font-size: 65%;
+		width: 90%;
+		margin: 0px auto;
+	}
+
+
+
+
+	.travels {
+		width: 100%;
+		height: 1300px;
+		top: 20px;
+
+	}
+
+	.glacier {
+		width: 100%;
+		height: 33.33%;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+	}
+	.image-transition {
+		position: absolute;
+		background: rgba(0,0,0,0.4);
+		width: 100%;
+		height: 11%;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 35%;
+		padding-top: 170px;
+		visibility: hidden;
+		opacity: 0;
+		text-align: center;
+	}
+	.glacier #img {
+		height: 50%;
+		float: none;
+		display: block;
+		width: 100%;
+		border-radius: 2px;
+	}
+	.glacier:hover .image-transition {
+		opacity: 1;
+		visibility: visible;
+		transition: all 1.5s ease;
+	}
+	.butons a input{
+		border: 1.5px solid white;
+		padding: 8px 15px;
+		border-radius: 20px;
+		font-size: 75%;
+
+
+	}
+	.butons a input:hover {
+		background: lightblue;
+		border: 1.5px solid transparent;
+	}
+
+	.glacier #img2 {
+		height: 50%;
+		float: none;
+		display: block;
+		margin-top: -50px;
+		width: 100%;
+	}
+	.glacier #img2 h1 {
+		text-align: center;
+		font-size: 35px;
+		position: relative;
+		top: 25%;
+	}
+
+
+	.holiday {
+		width: 100%;
+		height: 33.33%;
+		margin-top: -19px;
+	}
+
+
+	.holiday #img {
+		height: 50%;
+		width: 100%;
+		border-radius: 2px;
+	}
+
+
+	.holiday #img2 {
+		height: 50%;
+		float: none;
+		width: 100%;
+		position: relative;
+		top: -55px;
+
+	}
+	.holiday #img2 h1 {
+		text-align: center;
+		font-size: 30px;
+		color: white;
+		position: relative;
+		top: 25%;
+		text-shadow: 2px 2px 8px white;
+	}
+
+
+	.farm-house {
+		width: 100%;
+		height: 33.33%;
+
+	}
+	.farm-house #img {
+		height: 50%;
+		width: 100%;
+		position: relative;
+		top: 1px;
+	}
+
+
+	.farm-house #img2 {
+		height: 50%;
+		float: none;
+		width: 100%;
+		position: relative;
+		top: -50px;
+	}
+	.farm-house #img2 h1 {
+
+		font-size: 35px;
+		position: relative;
+		top: 25%;
+
+	}
+
+
+
+	.celebrity {
+		width: 100%;
+		height: 950px;
+		position: relative;
+		top: -30px;
+
+	}
+	.celebrity img{
+		filter: grayscale(70%);
+
+	}
+
+	.celebrity img:hover{
+		filter: grayscale(0);
+		/*transform: scaleX(1.1);*/
+		/*transform: scale(1.5,1.5);
+	*/
+	}
+	.gallery-heading {
+		height: 120px;
+
+
+	}
+	.gallery-heading h1{
+		text-align: center;
+		position: relative;
+		top: 25px;
+		font-size: 30px;
+		text-shadow: 2px 2px 10px black;
+	}
+
+
+	.celebrity1-wrapper {
+		width: 100%;
+		height: 50%;
+
+	}
+
+	.gallery-pic1 {
+		/*background: pink;*/
+		width: 33.33%;
+		height: 50%;
+		float: left;
+		overflow: hidden;
+	}
+
+	.gallery-pic2 {
+		width: 33.33%;
+		height: 50%;
+		float: left;
+
+	}
+
+
+	.gallery-pic3 {
+		width: 33.33%;
+		height: 50%;
+		float: left;
+
+
+	}
+
+
+
+	.gallery-pic4 {
+
+		width: 50%;
+		height: 50%;
+		float: none;
+		border-radius: 8px;
+
+
+	}
+
+
+	.gallery-pic5 {
+		background: red;
+		width: 50%;
+		height: 50%;
+		float: right;
+		border-radius: 8px;
+		position: relative;
+		bottom: 50%;
+	}
+
+
+
+
+	.celebrity2-wrapper {
+		width: 100%;
+		height: 50%;
+
+	}
+
+	.gallery-pic6 {
+		width: 50%;
+		height: 50%;
+		float: left;
+
+	}
+
+
+	.gallery-pic7 {
+
+		display: none;
+	}
+
+
+
+	.gallery-pic8 {
+		width: 50%;
+		height: 50%;
+		float:	right;
+		position: relative;
+		bottom: 50%;
+
+	}
+
+
+
+	.gallery-pic9 {
+		width: 50%;
+		height: 50%;
+		float: none;
+		border-radius: 8px;
+		overflow: hidden;
+
+	}
+
+
+
+	.gallery-pic10{
+		width: 50%;
+		height: 50%;
+		position: relative;
+		bottom: 50%;
+		float: right;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+
+
+	.form-wrapper{
+		padding: 0;
+		margin: 0;
+	}
+
+	.form-wrapper form {
+		width: 100%;
+		background-color: #a1a1a1;
+		padding: 0;
+		margin: 0;
+	}
+	.form-wrapper table td{
+		font-size: 20px;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: block;
+		margin-left: 30px;
+	}
+	.form-wrapper table{
+		font-size: 20px;
+		/*background-color: yellow;*/
+		width: 90%;
+		color: white;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		bottom: 120px;
+
+	}
+
+	.main-form {
+
+	}
+
+	.form-wrapper table input {
+		padding: 8px 22px;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		font-size: 16px;
+		padding-left: 20px;
+		width: 80%;
+
+	}
+	.form-wrapper input[type="submit"] {
+		padding-left: 20px;
+		box-shadow: 2px 5px 8px transparent;
+		color: black;
+		margin-top: 0;
+		margin-left: 30%;
+		width: 30%;
+	}
+
+
+
+	footer {
+		background: black;
+		width: 100%;
+		height: 180px;
+	}
+
+	.footer-wrapper {
+		height: 100%;
+		max-width: 100%;
+		text-align: left;
+		/*background: yellow;*/
+	}
+	.first-section {
+		width: 100%;
+		height: 33.33%;
+	}
+
+	.social-icon {
+
+		width: 100%;
+	}
+	.social-icon ul {
+		width: 90%;
+		padding: 0;
+		margin: 10px auto;
+		text-align: center;
+	}
+	.social-icon ul li {
+		display: inline-block;
+		text-align: center;
+		padding: 3px 15px;
+		width: 10%;
+
+
+	}
+	.social-icon ul li a {
+		font-size: 25px;
+		color: #fff;
+	}
+
+	.list-names {
+		width: 100%;
+	}
+	.list-names ul {
+		width: 90%;
+		padding: 0;
+		margin: 10px auto;
+		text-align: center;
+	}
+	.list-names ul li {
+		text-align: center;
+		padding: 3px 15px;
+
+	}
+	.list-names ul li a {
+		font-size: 20px;
+		color: #fff;
+
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 470px) {
+
+	.logo img {
+
+		height: 70px;
+		width: 180px;
+	}
+
+
+	.navigation ul {
+		display: none;
+		background: black;
+		position: fixed;
+		width: 100%;
+		top: 10%;
+	}
+	.navigation ul li {
+		float: none;
+		list-style-type: none;
+		background: black;
+		margin-top: 5px;
+		text-align: center;
+		display: block;
+		z-index: -999;
+		padding: 20px 35%;
+
+	}
+
+	.navigation ul li a {
+		font-size: 90%;
+	}
+
+	.main-content-wrapper {
+
+		width: 100%;
+		height: 270px;
+	}
+
+	.news {
+		display: block;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.news img {
+		width: 100%;
+		height: 73%;
+	}
+	.news p {
+		text-align: justify;
+		text-align: center;
+		font-size: 76%;
+		margin-top: 0;
+	}
+
+	.picture {
+		height: 190px;
+		width: 100%;
+		margin-top: 0;
+		display: block;
+		overflow: hidden;
+	}
+
+	.heading {
+		position: absolute;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	.heading h1 {
+		margin-top: 25px;
+		font-size: 25px;
+		text-shadow: 3px 3px 20px white;
+	}
+	.heading h3 {
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-shadow: 3px 3px 10px white;
+	}
+	.heading a {
+		border: 2px solid white;
+		padding: 5px 10px;
+		font-size: 10px;
+		border-radius: 10px;
+		box-shadow: 1px 1px 1px transparent;
+	}
+
+	.main-articles {
+		width: 100%;
+		max-width: 100%;
+		height: 300px;
+
+	}
+	.text1 p {
+		font-size: 57%;
+	}
+	.text2 p {
+		font-size: 57%;
+		width: 90%;
+		margin: 0px auto;
+	}
+
+
+	.travels {
+		width: 100%;
+		height: 1100px;
+		top: 20px;
+
+	}
+
+	.image-transition {
+
+		padding-top: 143px;
+
+	}
+
+	.butons a input{
+		font-size: 60%;
+
+	}
+
+	.glacier #img2 h1 {
+		font-size: 25px;
+		position: relative;
+		top: 35%;
+	}
+
+	.holiday #img2 h1 {
+		font-size: 23px;
+		top: 25%;
+		text-shadow: 4px 4px 5px 1px white;
+	}
+
+	.farm-house #img2 h1 {
+
+		font-size: 28px;
+		position: relative;
+		top: 25%;
+
+	}
+
+
+	.celebrity {
+		width: 100%;
+		height: 750px;
+		position: relative;
+		top: -30px;
+
+	}
+
+
+	.celebrity1-wrapper {
+		width: 100%;
+		height: 50%;
+
+	}
+
+	.gallery-heading h1{
+		font-size: 25px;
+	}
+
+	.gallery-pic1 {
+		width: 50%;
+		height: 50%;
+		float: left;
+		overflow: hidden;
+	}
+
+	.gallery-pic2 {
+		width: 50%;
+		height: 50%;
+		float: right;
+
+	}
+
+
+	.gallery-pic3 {
+		display: none;
+	}
+
+	.form-wrapper table td{
+		font-size: 19px;
+		margin-left: 28px;
+	}
+	.form-wrapper table{
+		font-size: 19px;
+	}
+
+
+	.form-wrapper table input {
+		padding-left: 0px;
+		padding: 4px 0; 
+
+	}
+	.form-wrapper input[type="submit"] {
+		padding-left: 12px;
+		font-size: 19px;
+	}
+	
+
+
+	footer {
+		background: black;
+		width: 100%;
+		height: 170px;
+	}
+
+	.footer-wrapper {
+		height: 100%;
+		max-width: 100%;
+		text-align: left;
+	}
+	.social-icon ul {
+		margin-left: 10px;
+	}
+
+	.social-icon ul li {
+		padding: 1px 10px;
+	}
+	.social-icon ul li a {
+		font-size: 22px;
+		color: #fff;
+	}
+
+	.list-names {
+		width: 100%;
+	}
+	.list-names ul {
+		width: 90%;
+		padding: 0;
+		margin: 15px auto;
+		text-align: center;
+	}
+	.list-names ul li {
+		padding: 1px 15px;
+
+	}
+	.list-names ul li a {
+		font-size: 12px;
+
+	}
+
+	.para p {
+	  text-align: center;
+	  color: #fff;
+	  font-size: 14px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 300px) {
+
+	.logo img {
+
+		height: 70px;
+		width: 140px;
+	}
+
+	.navigation ul li {
+		padding: 20px 30%;
+
+	}
+	.navigation ul li a {
+		font-size: 85%;
+	}
+
+	.main-content-wrapper {
+
+		width: 100%;
+		height: 200px;
+	}
+
+	.news {
+		display: block;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.news img {
+		width: 100%;
+		height: 65%;
+	}
+	.news p {
+		text-align: justify;
+		text-align: center;
+		font-size: 65%;
+		margin-top: 0;
+	}
+
+	.picture {
+		height: 120px;
+		width: 100%;
+	}
+
+	.heading h1 {
+		margin-top: 10px;
+		font-size: 17px;
+
+	}
+	.heading h3 {
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+	.heading a {
+		border: 1px solid white;
+		font-size: 8px;
+		box-shadow: none;
+	}
+
+	.main-articles {
+		width: 100%;
+		max-width: 100%;
+		height: 200px;
+
+	}
+	.text1 p {
+		font-size: 40%;
+	}
+	.text2 p {
+		font-size: 40%;
+		width: 90%;
+		margin: 0px auto;
+	}
+
+
+
+
+	.travels {
+		width: 100%;
+		height: 800px;
+		top: 5px;
+
+	}
+
+	.image-transition {
+
+		padding-top: 105px;
+
+	}
+
+	.butons a input{
+		font-size: 40%;
+
+	}
+
+	.holiday {
+	    width: 100%;
+	    margin-top: -40px; 
+	}
+
+	.gallery-heading {
+	    height: 120px;
+	    margin-top: -55px;
+	}
+
+	.glacier #img2 h1 {
+		font-size: 18px;
+		position: relative;
+		top: 35%;
+	}
+
+	.holiday #img2 h1 {
+		font-size: 16px;
+		top: 25%;
+	}
+
+	.farm-house #img2 h1 {
+
+		font-size: 20px;
+		position: relative;
+		top: 25%;
+
+	}
+
+
+
+
+	.celebrity {
+		width: 100%;
+		height: 650px;
+		position: relative;
+		top: -20px;
+
+	}
+
+
+	.celebrity1-wrapper {
+		width: 100%;
+		height: 50%;
+
+	}
+
+	.gallery-heading h1{
+		font-size: 19px;
+		position: relative;
+		top: 25%;
+	}
+
+
+	.form-wrapper table td{
+		font-size: 15px;
+		margin-left: 20px;
+	}
+	.form-wrapper table{
+		font-size: 19px;
+	}
+
+
+	.form-wrapper table input {
+		padding-left: 0px;
+
+	}
+	.form-wrapper input[type="submit"] {
+		padding-left: 6px;
+		font-size: 15px;
+	}
+
+
+
+	footer {
+		background: black;
+		width: 100%;
+		height: 150px;
+	}
+	.social-icon ul {
+		margin-left: 1px;
+	}
+
+	.social-icon ul li {
+		padding: 1px 10px;
+	}
+	.social-icon ul li a {
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.list-names {
+		width: 100%;
+	}
+	.list-names ul {
+		width: 90%;
+		padding: 0;
+		margin: 15px auto;
+		text-align: center;
+	}
+	.list-names ul li {
+		padding: 1px 5px;
+
+	}
+	.list-names ul li a {
+		font-size: 11px;
+
+	}
+
+	.para p {
+	  text-align: center;
+	  color: #fff;
+	  font-size: 11px;
+	}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*................Close media query area.....................*/
