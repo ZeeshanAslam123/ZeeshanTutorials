@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.main_cal {
+			margin-top: 10%;
+			margin-left: 35%;
+		}
+		form {
+			background-color: red;
+			height: 443px;
+    		width: 330px;
+			padding: 24px 11px;
+			background: #6E6E6E;
+			border: 2px solid #222222;
+			box-shadow: 1px 2px 10px #222222;
+			border-radius: 10px;
+		}
+		form input {
+			padding: 10px 15px;
+			margin-bottom: 15px;
+			margin-left: 22px;
+			color: #fff;
+			background: #222222;
+			border: 3px solid #EBEBEB;
+			border-radius: 7px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		#equal {
+		    padding: 43px 14px;
+		    position: absolute;
+		    margin-left: 27px;
+		    background: #008102;
+		}
+		.text_box {
+			padding-left: 0;
+			background: #91B27D;
+			border-radius: 10px;
+			padding-left: 0px;
+			position: relative;
+		    left: -8px;
+		    width: 278px;
+		    padding: 12px 20px;
+		}
+		
+		#end_btn {
+			margin-left: 24px;
+
+		}
+		.shadow {
+		   -moz-box-shadow:    inset 0 0 10px #000000;
+		   -webkit-box-shadow: inset 0 0 10px #000000;
+		   box-shadow:         inset 0 0 10px #000000;
+		}
+		.shadow_outer {
+			box-shadow: 2px 2px 4px 2px #222;
+		}
+		.all_input_padding {
+			padding: 10px 15px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="main_cal">
+		<form name="myforms">
+			<div class="long_text">
+				<input type="text" name="textbox" class="text_box shadow">
+			</div>
+			<div class="all_button">
+				<input type="button" name="" value="1" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '1'">
+				<input type="button" name="" value="2" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '2'">
+				<input type="button" name="" value="3" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '3'">
+				<input type="button" name="" value="+" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '+'">
+			</div>
+			<div class="all_button">
+				<input type="button" name="" value="4" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '4'">
+				<input type="button" name="" value="5" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '5'">
+				<input type="button" name="" value="6" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '6'">
+				<input type="button" name="" value="-" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '-'">
+			</div>
+			<div class="all_button">
+				<input type="button" name="" value="7" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '7'">
+				<input type="button" name="" value="8" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '8'">
+				<input type="button" name="" value="9" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '9'">
+				<input type="button" name="" value="*" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '*'">
+			</div>
+			<div class="all_button">
+				<input type="button" class="shadow_outer all_input_padding" name="" value="C" style="background: #FF0103;" onclick="myforms.textbox.value = '' ">
+				<input type="button" name="" value="/" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '/'">
+				<input type="button" name="" value="0" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '0'">
+				<input type="button" name="" value="=" id="equal" class="shadow_outer all_input_padding" onclick="myforms.textbox.value = eval(myforms.textbox.value)">
+			</div>
+			<div class="all_button">
+				<input type="button" name="" value="(" id="end_btn" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '('">
+				<input type="button" name="" value=")" id="end_btn" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += ')'">
+				<input type="button" name="" value="<" id="end_btn" class="shadow_outer all_input_padding" onclick="myforms.textbox.value += '<'">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
